@@ -1,0 +1,22 @@
+.sorting {
+  margin: 0px 0px 15px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: flex-end;
+}
+.sorting > span.label {
+  font-weight: bold;
+  cursor: initial;
+  margin: 5px 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .sorting {
+    display: none;
+  }
+  .ant-radio-group > .ant-radio-wrapper {
+    display: block;
+    margin: 10px;
+    font-size: 15px;
+  }
+}

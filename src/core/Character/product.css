@@ -1,0 +1,53 @@
+.product {
+  margin-bottom: 20px;
+}
+.product > div {
+  background-color: rgb(89, 89, 89);
+}
+.product > div figure {
+  position: relative;
+}
+.product > div figure > figcaption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
+  text-align: initial;
+  padding: 5px;
+}
+.product > div figure .product-image {
+  width: 100%;
+  height: 275px;
+  max-height: 275px;
+  min-height: 275px;
+}
+
+.product > div figure > figcaption .product-name {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 5px 0px;
+  display: block;
+}
+
+.product > div .more-information {
+  min-height: 300px;
+}
+.product > div .more-information > .info-block {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(67, 66, 66);
+  padding: 10px;
+}
+.product > div .more-information > .info-block > .info,
+.product > div .more-information > .info-block > .label {
+  width: 50%;
+  color: rgb(198, 196, 196);
+  text-align: start;
+  text-transform: uppercase;
+}
+.product > div .more-information > .info-block > .info {
+  color: rgb(250, 173, 20);
+  text-align: end;
+  text-transform: capitalize;
+}

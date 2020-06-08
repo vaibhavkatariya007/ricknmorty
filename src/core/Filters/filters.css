@@ -1,0 +1,85 @@
+.selected.filters {
+  color: rgb(255, 255, 255);
+  justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+}
+.selected.filters > span {
+  font-weight: bold;
+  cursor: initial;
+  margin: 5px 10px;
+}
+
+.filtering .filter,
+.filtering {
+  padding: 30px 20px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+.filtering .filter {
+  border-bottom: 1px solid rgb(49, 49, 49);
+}
+.filter-header {
+  display: block;
+  text-align: initial;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: rgb(250, 173, 20);
+}
+.filtering .filter .options > span {
+  display: block;
+  padding: 5px;
+  cursor: pointer;
+  text-transform: capitalize;
+  text-align: left;
+  padding-left: 20px;
+}
+.filtering .filter .options > span.selected,
+.filtering .filter .options > span:hover {
+  color: rgb(250, 173, 20);
+}
+.filtering .label {
+  display: block;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.filter .max-min-value {
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+.filter-type {
+  text-align: center;
+}
+
+.filtering button,
+.filtering button:hover,
+.filtering button:focus {
+  display: block;
+  margin: 0 auto;
+  background-color: rgb(40, 116, 240);
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+}
+
+.filtering button.reset,
+.filtering button.reset:hover,
+.filtering button.reset:focus {
+  background-color: rgb(235, 141, 20);
+}
+
+@media only screen and (max-width: 600px) {
+  .ant-layout-sider {
+    display: none;
+  }
+  .ant-modal-body .filter .options > span {
+    margin: 5px;
+    border-bottom: 1px solid #000;
+  }
+  .ant-modal-body .filter .options > span.selected {
+    color: rgb(235, 141, 20);
+  }
+}
